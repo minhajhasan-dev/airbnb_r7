@@ -103,3 +103,5 @@ yarn-debug.log*
 # macOS files
 **/.DS_Store
 .DS_Store
+/app/assets/builds/*
+!/app/assets/builds/.keep
