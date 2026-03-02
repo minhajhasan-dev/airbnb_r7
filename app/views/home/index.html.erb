@@ -1,1 +1,35 @@
-<h1>Hello World From </h1>
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900">Nearby Stays</h2>
+
+    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+    <% @properties.each do |property| %>
+      <div class="group relative">
+        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-2xl bg-gray-200  group-hover:opacity-75">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center">
+        </div>
+        <div class="mt-4 flex justify-between">
+            
+          <div>
+            <h3 class="text-sm text-gray-700">
+              <a href="#">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                <%= property.city %>, <%= property.state %>, <%= property.country %>
+              </a>
+            </h3>
+            <p class="mt-0.5 text-sm text-gray-500">Hosted by Minhaj</p>
+            <p class="mt-0.5 text-sm text-gray-500">Apr 12-15</p>
+            <p class="mt-0.5 text-sm font-light text-gray-500"> <span class="font-semibold">$35</span>/Night</p>
+          </div>
+          <%# right side  stars %>
+          <div class="flex">
+            <span class="text-black">★</span>
+            <span class="text-black">4.9</span>
+            <span class="text-black">(100)</span>
+          </div>
+        </div>
+      </div>
+    <%end%>
+    </div>
+  </div>
+</div>
